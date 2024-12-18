@@ -17,8 +17,9 @@
             Margin="0,50,10,0"     
             Width="300"
             />
-        
+
         <StackPanel Margin="0,100,0,0">
+
             <Button 
                 x:Name="AddApplication"
                 VerticalAlignment="Top"
@@ -27,7 +28,7 @@
                 Height="40"
                 Click="AddApplication_Click"
                 Content="Добавить заявку"
-                />  
+                />
 
             <Button
                 x:Name="EditApplication"
@@ -58,17 +59,17 @@
                 Click="Statistic_Click"
                 Content="Посмотреть статистику"
                 />
-
-            <Button 
-                x:Name="MarkUp"
-                VerticalAlignment="Top"
-                HorizontalAlignment="Center"
-                Width="200"
-                Height="40"
-                Click="MarkUp_Click"
-                Content="Оцените нас"
-                />
         </StackPanel>
- 
+        <Image Margin="56,100,642,249" Source="/Мастер пол.ico" Stretch="Fill"/>
+
+        <Image 
+            Name="imgbarcode" Margin="627,122,70,234"
+         />
+        <TextBlock 
+            x:Name="tbkbarcodecontent" 
+            FontWeight="Bold" 
+            HorizontalAlignment="Left" Margin="104,206,0,105"
+        />
+
     </Grid>
 </Page>
